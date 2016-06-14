@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umZ-e9-8aF">
+                                <rect key="frame" x="0.0" y="70" width="320" height="178"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jEU-ip-AGF">
+                                        <rect key="frame" x="8" y="30" width="304" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPU-9d-Jls">
+                                        <rect key="frame" x="8" y="90" width="304" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gID-Z1-UA0">
+                                        <rect key="frame" x="145" y="140" width="30" height="30"/>
+                                        <state key="normal" title="登录"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="gID-Z1-UA0" firstAttribute="centerX" secondItem="umZ-e9-8aF" secondAttribute="centerX" id="3Ra-Do-uBz"/>
+                                    <constraint firstItem="jEU-ip-AGF" firstAttribute="top" secondItem="umZ-e9-8aF" secondAttribute="top" constant="30" id="DIv-DU-i1m"/>
+                                    <constraint firstAttribute="trailing" secondItem="jEU-ip-AGF" secondAttribute="trailing" constant="8" id="O2L-dP-LHi"/>
+                                    <constraint firstAttribute="bottom" secondItem="gID-Z1-UA0" secondAttribute="bottom" constant="8" id="UBd-Y4-Ov0"/>
+                                    <constraint firstItem="RPU-9d-Jls" firstAttribute="top" secondItem="jEU-ip-AGF" secondAttribute="bottom" constant="30" id="USV-Dk-kOn"/>
+                                    <constraint firstItem="RPU-9d-Jls" firstAttribute="leading" secondItem="umZ-e9-8aF" secondAttribute="leading" constant="8" id="WFX-vN-k4x"/>
+                                    <constraint firstItem="jEU-ip-AGF" firstAttribute="leading" secondItem="umZ-e9-8aF" secondAttribute="leading" constant="8" id="ZRm-Vw-LAU"/>
+                                    <constraint firstAttribute="trailing" secondItem="RPU-9d-Jls" secondAttribute="trailing" constant="8" id="usm-IY-zSy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="umZ-e9-8aF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="5SZ-py-Pr0"/>
+                            <constraint firstItem="umZ-e9-8aF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Zm-1U-uWQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="umZ-e9-8aF" secondAttribute="bottom" constant="320" id="Mod-G4-Wlq"/>
+                            <constraint firstAttribute="trailing" secondItem="umZ-e9-8aF" secondAttribute="trailing" id="fXE-X6-Z1R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="login" destination="gID-Z1-UA0" id="9Fx-OJ-hrH"/>
+                        <outlet property="passNumber" destination="RPU-9d-Jls" id="F5b-cc-ONh"/>
+                        <outlet property="userNumber" destination="jEU-ip-AGF" id="xZA-Nv-rEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="342"/>
+        </scene>
+    </scenes>
+</document>
